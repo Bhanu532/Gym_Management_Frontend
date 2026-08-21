@@ -1,47 +1,71 @@
-# Node
+# ==========================================
+# Production .gitignore for Next.js Frontend
+# ==========================================
+
+# Dependencies
 node_modules/
-.history/
+.pnpm-store/
 
-# Build outputs
-dist/
+# Next.js Build & Production Outputs
+.next/
+out/
 build/
+dist/
+.turbo/
+.vercel/
 
-# TypeScript
-*.tsbuildinfo
-
-# Environment
+# Environment & Secrets (NEVER COMMIT SENSITIVE DATA)
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env.*.local
-.DS_Store
-.turbo/
+!.env.example
 
-# Frontend
-frontend/.env.local
-frontend/.next
+# TypeScript Compilation Outputs
+*.tsbuildinfo
+next-env.d.ts.bak
 
-# Logs
+# Logs & Diagnostics
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
-yarn-error.log*
-*.log
+lerna-debug.log*
 
-# IDEs and editors
-.vscode/
-.idea/
-
-# Coverage and reports
+# Test & Coverage
 coverage/
 .nyc_output/
-reports/
+.jest/
+junit.xml
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-results/
 
-# Prisma
-prisma/dev.db
-prisma/.env
+# IDEs & Editor Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
 
-# Generated
-prisma-client/
-
-# Misc
+# Caches & Temporary Files
 .cache/
+.eslintcache
+.prettiercache
+.stylelintcache
+tmp/
+temp/
+scratch/
