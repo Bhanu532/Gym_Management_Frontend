@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components/AppShell.tsx -> @/lib/api\":{\"id\":\"components/AppShell.tsx -> @/lib/api\",\"files\":[]}}"
