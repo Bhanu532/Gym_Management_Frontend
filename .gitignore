@@ -13,6 +13,12 @@ build/
 .env
 .env.local
 .env.*.local
+.DS_Store
+.turbo/
+
+# Frontend
+frontend/.env.local
+frontend/.next
 
 # Logs
 npm-debug.log*
@@ -24,7 +30,6 @@ yarn-error.log*
 # IDEs and editors
 .vscode/
 .idea/
-.DS_Store
 
 # Coverage and reports
 coverage/
@@ -36,7 +41,6 @@ prisma/dev.db
 prisma/.env
 
 # Generated
-node_modules/
 prisma-client/
 
 # Misc
